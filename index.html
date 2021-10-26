@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate App</title>
+
+    <style>
+        #container{
+            width: 80%;
+            margin :auto;
+        }
+        div div, button {
+            margin : 1%;
+            /* border: 1px solid black; */
+        }
+        #container > div, #input-output > div > div:nth-child(1){
+            display: flex;
+            /* flex-grow: 2%; */
+            justify-content: center;
+        }
+
+        #input-output > div {
+            display : grid;
+            /* grid-gap: 2%; */
+        }
+
+        #input-output {
+            height: 250px;
+        }
+        textarea{
+            margin: 1%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Translate Api</h1>
+        
+
+        <div id='input-output'>
+            <div id='input-div'>
+                <div id='lang-selector-box' >
+                    <p>Translate From </p>
+                    <select name="" id="input-lang-selector" class='no-margin'>
+                        <option value="vi">Vietnamese</option>
+                        <option value="en">English</option>
+                        <option value="ar">Arabic</option>
+                        <option value="zh">Chinese</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="hi">Hindi</option>
+                        <option value="in">Indonesian</option>
+                        <option value="ga">Irish</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="pl">Polish</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="be">Russian</option>
+                        <option value="es">Spanish</option>
+                        <option value="tr">Turkish</option>
+                    </select>
+                    
+                
+                </div>
+                <textarea name="" id="input" cols="50" rows="10"></textarea>
+    
+            </div>
+
+            <div id='output-div'>
+                <div id='lang-selector-box' >
+                    <p>Translate into </p>
+                    <select name="" id="output-lang-selector" class='no-padding'>
+                        <option value="vi">Vietnamese</option>
+                        <option value="en">English</option>
+                        <option value="ar">Arabic</option>
+                        <option value="zh">Chinese</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="hi">Hindi</option>
+                        <option value="in">Indonesian</option>
+                        <option value="ga">Irish</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="pl">Polish</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="be">Russian</option>
+                        <option value="es">Spanish</option>
+                        <option value="tr">Turkish</option>
+                    </select>
+                    
+                
+                </div>
+                <textarea name="" id="output" cols="50" rows="10"></textarea>
+    
+            </div>
+        </div>
+
+        <div id='buttons'>
+            <button id='speak'>Click to Speak</button>
+            <button id='translate'>translate</button>
+            <button >Speak Out</button>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+<script type='module' src='js/index.js'></script>
